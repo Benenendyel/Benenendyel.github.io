@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dyson</title>
+    <link rel="stylesheet" href="./styles/homepage.css" />
+    <link rel="stylesheet" href="./styles/signup.css" />
+    <link rel="stylesheet" href="./styles/signin.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/target.css" />
+    <link rel="icon" href="./assets/images/icon.png" />
+  </head>
+  <body>
+    <div class="phone-container">
+      <div class="camera-section">
+        <img class="camera-icon" src="./assets/images/camera-lens.png" />
+      </div>
+      <div class="phone-bezel">
+        <!-- This is the welcome section -->
+        <div class="welcome-section section" id="welcome-section">
+          <div class="user-welcome-message">
+            <span class="welcome-message">Welcome</span>
+            <p class="small-description">
+              The MyDyson™ app helps you get the best from your connected
+              machines from day one.
+            </p>
+          </div>
+          <div class="user-sign-button">
+            <a class="signup-button welcome-button" href="#signup-section"
+              >New Owner</a
+            >
+            <a class="signin-button welcome-button" href="#signin-section"
+              >Log in</a
+            >
+          </div>
+        </div>
+
+        <!-- This is sign up section -->
+        <div class="signup-section section" id="signup-section">
+          <div class="signup-navbar">
+            <a class="signup-back-button back-button" href="#welcome-section"
+              ><img class="icon" src="./assets/images/left-arrow.png"
+            /></a>
+            <span class="signup-header">New Owner</span>
+          </div>
+          <div class="signup-information">
+            <div class="signup-details">
+              <span class="signup-message">Your details</span>
+              <p class="signup-description">
+                Please use your email address to create your own account.
+              </p>
+            </div>
+            <div class="signup-input-container">
+              <input class="signup-input" id="signup-input" type="email" />
+              <label
+                class="signup-input-label"
+                id="signup-input-label"
+                for="signup-input"
+                >Email Address</label
+              >
+            </div>
+          </div>
+          <div class="signup-button-section">
+            <a class="continue-signup-button" id="continue-signup-button"
+              >Continue</a
+            >
+          </div>
+        </div>
+
+        <!-- This is sign in -->
+        <div class="signin-section section" id="signin-section">
+          <div class="signin-navbar">
+            <a class="signin-back-button back-button" href="#"
+              ><img class="icon" src="./assets/images/left-arrow.png"
+            /></a>
+            <span class="signin-header">Log In</span>
+          </div>
+          <div class="signin-information">
+            <div class="signin-details">
+              <span class="signin-message">Your details</span>
+              <p class="signin-description">Please enter your email address.</p>
+            </div>
+            <div class="signin-input-container">
+              <input class="signin-input" id="signin-input" type="email" />
+              <label
+                class="signin-input-label"
+                id="signin-input-label"
+                for="signin-input"
+                >Email Address</label
+              >
+            </div>
+          </div>
+          <div class="signin-button-section">
+            <a class="continue-signin-button" href="">Continue</a>
+          </div>
+        </div>
+
+        <!-- This is sign up's full name section -->
+        <div
+          class="signup-fullname-section section"
+          id="signup-fullname-section"
+        >
+          <div class="signup-navbar">
+            <a class="signup-back-button back-button" href="#signup-section"
+              ><img class="icon" src="./assets/images/left-arrow.png"
+            /></a>
+            <span class="signup-header">New to Dyson</span>
+          </div>
+          <div class="signup-information">
+            <div class="signup-details">
+              <span class="signup-message">Your details</span>
+              <p class="signup-description">
+                We'll need a few more details to create your login.
+              </p>
+            </div>
+            <div class="signup-fullname-input-container">
+              <div class="signup-firstname">
+                <input
+                  class="signup-firstname-input"
+                  id="signup-firstname-input"
+                  type="text"
+                />
+                <label
+                  class="signup-firstname-input-label"
+                  id="signup-firstname-input-label"
+                  for="signup-firstname-input"
+                  >First name</label
+                >
+              </div>
+              <div class="signup-fullname-divider"></div>
+              <div class="signup-lastname">
+                <input
+                  class="signup-lastname-input"
+                  id="signup-lastname-input"
+                  type="text"
+                />
+                <label
+                  class="signup-lastname-input-label"
+                  id="signup-lastname-input-label"
+                  for="signup-lastname-input"
+                  >Last name</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="signup-button-section">
+            <a
+              class="continue-signup-button"
+              id="fullname-continue-button"
+              href=""
+              >Continue</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- This is navigation bar -->
+      <div class="navigation-bar">
+        <a class="back-button">
+          <img class="icon" src="./assets/images/left-arrow.png" />
+        </a>
+        <a class="home-button" href="#welcome-section">
+          <img class="icon" src="./assets/images/home.png" />
+        </a>
+        <a class="app-drawer">
+          <img class="icon" src="./assets/images/bars.png" />
+        </a>
+      </div>
+    </div>
+    <script src="./handler/navigation.js" defer></script>
+    <script src="./handler/auth.js" defer></script>
+  </body>
+</html>

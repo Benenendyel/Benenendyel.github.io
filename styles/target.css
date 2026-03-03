@@ -1,0 +1,19 @@
+.section {
+  position: absolute;
+  inset: 0;
+
+  display: none;
+
+  height: 100%;
+  width: 100%;
+}
+
+.section:target {
+  display: flex;
+  z-index: 10;
+}
+
+#welcome-section {
+  display: flex;
+  z-index: 5;
+}
